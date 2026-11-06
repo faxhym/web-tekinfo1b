@@ -1,0 +1,16 @@
+{
+  "name": "web-tekinfo1b",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python -m http.server 4173 --bind 127.0.0.1",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.56.0",
+    "lighthouse": "^13.6.0",
+    "prettier": "^3.9.10"
+  }
+}

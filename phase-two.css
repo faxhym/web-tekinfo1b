@@ -1,0 +1,117 @@
+.program-map {
+  background: var(--pale);
+  padding: 32px;
+  min-width: 0;
+}
+.program-map h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+.program-map ul {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+}
+.program-map li {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 16px;
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+  align-items: baseline;
+}
+.program-map li span {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+.program-map li a {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  font-weight: 600;
+  text-decoration: none;
+}
+.program-map li a:hover {
+  text-decoration: underline;
+}
+.legacy-artifact {
+  margin-top: 24px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.legacy-artifact summary {
+  padding: 12px 0;
+  cursor: pointer;
+  font-weight: 700;
+}
+.legacy-artifact figure {
+  margin-top: 16px;
+}
+.guide {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 40px 80px;
+  padding-block: 88px;
+  border-bottom: 1px solid var(--rule);
+}
+.guide > div p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-top: 24px;
+  max-width: 55ch;
+}
+.decision-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.decision-list li {
+  padding-block: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.decision-list li:first-child {
+  padding-top: 0;
+}
+.decision-list h3 {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+.decision-list p {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.source-status {
+  grid-column: 1/-1;
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 100ch;
+}
+.guide > * {
+  min-width: 0;
+}
+@media (max-width: 800px) {
+  .guide {
+    grid-template-columns: 1fr;
+    padding-block: 56px;
+    gap: 32px;
+  }
+  .program-map {
+    padding: 24px;
+  }
+  .source-status {
+    grid-column: auto;
+  }
+}
+@media print {
+  .program-map,
+  .guide {
+    background: white;
+    color: black;
+  }
+  .guide {
+    padding-block: 24px;
+  }
+}

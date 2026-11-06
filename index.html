@@ -1,77 +1,418 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>TEKINFO</title>
-		<link href="webtekinfostyle.css" rel="stylesheet">
-	</head>
-		<body>
-			<video autoplay muted loop class="bg-video">
-				<source src="bgvideo.mp4" type="video/mp4">
-			</video>
-		
-			<div class="header center">
-				<div class="header-content">
-				<img src="logoti.png" alt="logo" class="logo">
-					<h1>TEKNOLOGI INFORMASI</h1>
-					</div>
-			</div>
-			<div class="container">
-				<div class="sidebar">
-					<h2>Program Studi</h2>
-					<p>	<a href="https://ti.pnp.ac.id/teknik-komputer/">D3 Teknik Komputer</a><br>
-						<a href="https://ti.pnp.ac.id/teknologi-rekayasa-perangkat-lunak/">D4 Teknologi Rekayasa Perengkat Lunak</a><br>
-						<a href="https://ti.pnp.ac.id/manajemen-informatika/">D3 Manajemen Informatika</a><br>
-						<a href="https://ti.pnp.ac.id/animasi/">D4 Animasi</a><br>
-					</p>
-				</div>
-				<div class="Main">
-					<h2>Selamat Datang</h2>
-					<img src="fotoprodi.jpg" class="fprodi" width="250">
-					<p>Jurusan Teknologi Informasi menghasilkan tenaga profesional tingkat ahli madya di bidang Teknologi Informasi, Khususnya pengelolaan Informasi
-					berbasis komputer sehingga mampu bekerja di berbagai instansi, Perkantoran organisasi dan bisnis modern</p>
-					<h2>Akredetasi Program Studi</h2>
-					<p>Jurusan Teknologi Informasi menghasilkan tenaga profesional tingkat ahli madya di bidang Teknologi Informasi, Khususnya pengelolaan Informasi
-					berbasis komputer sehingga mampu bekerja di berbagai instansi, Perkantoran organisasi dan bisnis modern</p>
-					
-						<h2>Akreditasi Program Studi</h2>
-
-							<table class="tabel">
-								<tr>
-									<th>No</th>
-									<th>Program Studi</th>
-									<th>Jenjang</th>
-									<th>Akreditasi</th>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>Teknik Komputer</td>
-									<td>D3</td>
-									<td>Baik Sekali</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Teknologi Rekayasa Perangkat Lunak</td>
-									<td>D4</td>
-									<td>Baik Sekali</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>Manajemen Informatika</td>
-									<td>D3</td>
-									<td>Unggul</td>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td>Animasi</td>
-									<td>D4</td>
-									<td>Baik Sekali</td>
-								</tr>
-							</table>
-						
-				</div>
-			</div>
-			<div class="footer center">
-				<p style="color:orange">&copy politeknik negeri padang</p>
-			</div>
-	</body>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Kenali program studi Jurusan Teknologi Informasi Politeknik Negeri Padang: Teknik Komputer, Manajemen Informatika, TRPL, dan Animasi."
+    />
+    <meta name="theme-color" content="#183bb5" />
+    <title>Teknologi Informasi — Politeknik Negeri Padang</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/manrope.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="webtekinfostyle.css" />
+    <link rel="stylesheet" href="phase-two.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Langsung ke konten</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#" aria-label="Teknologi Informasi, beranda"
+          ><img
+            src="logoti.png"
+            alt="Jurusan Teknologi Informasi"
+            width="300"
+            height="70"
+          /><span>Politeknik Negeri Padang</span></a
+        >
+        <button
+          class="menu-toggle"
+          aria-label="Menu navigasi"
+          aria-expanded="false"
+          aria-controls="navigation"
+          hidden
+        >
+          Menu
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+        <nav id="navigation" aria-label="Navigasi utama">
+          <a href="#program-studi">Program studi</a
+          ><a href="#tentang">Tentang jurusan</a
+          ><a href="#akreditasi">Akreditasi</a>
+          <a class="nav-official" href="https://ti.pnp.ac.id/"
+            >Situs resmi
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 18 18 6M6 6h12v12" /></svg
+          ></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="opening" aria-labelledby="intro-title">
+        <div class="wrap">
+          <div class="intro">
+            <h1 id="intro-title">
+              Temukan arahmu<br />di dunia <span>teknologi.</span>
+            </h1>
+            <div class="intro-copy">
+              <p>
+                Mulai dari perangkat keras, perangkat lunak, hingga karya
+                visual. Kenali program studi Teknologi Informasi di Politeknik
+                Negeri Padang.
+              </p>
+              <a class="button button-lime" href="#program-studi"
+                >Jelajahi program studi
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 4v16m-6-6 6 6 6-6" /></svg
+              ></a>
+            </div>
+          </div>
+          <section
+            id="program-studi"
+            class="explorer"
+            aria-labelledby="program-title"
+          >
+            <div class="explorer-heading">
+              <h2 id="program-title">Pilih ruang belajarmu.</h2>
+              <div
+                id="program-filters"
+                role="group"
+                aria-label="Filter jenjang program studi"
+                hidden
+              >
+                <button type="button" data-degree="all" aria-pressed="true">
+                  Semua</button
+                ><button type="button" data-degree="D3" aria-pressed="false">
+                  D3</button
+                ><button type="button" data-degree="D4" aria-pressed="false">
+                  D4
+                </button>
+              </div>
+            </div>
+            <p
+              id="program-count"
+              class="sr-only"
+              role="status"
+              aria-live="polite"
+            >
+              4 program ditampilkan
+            </p>
+            <div class="program-list">
+              <details class="program" data-degree="D3">
+                <summary>
+                  <span class="degree">D3</span>
+                  <h3>Teknik Komputer</h3>
+                  <span class="program-area">Perangkat &amp; sistem</span
+                  ><svg class="plus" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14M12 5v14" />
+                  </svg>
+                </summary>
+                <div class="program-body">
+                  <p>
+                    Tertarik pada perangkat komputer dan sistem yang
+                    menghubungkannya? Kenali D3 Teknik Komputer melalui
+                    informasi program studi resmi.
+                  </p>
+                  <a href="https://ti.pnp.ac.id/teknik-komputer/"
+                    >Lihat Teknik Komputer <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </details>
+              <details class="program" data-degree="D3">
+                <summary>
+                  <span class="degree">D3</span>
+                  <h3>Manajemen Informatika</h3>
+                  <span class="program-area">Informasi &amp; organisasi</span
+                  ><svg class="plus" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14M12 5v14" />
+                  </svg>
+                </summary>
+                <div class="program-body">
+                  <p>
+                    Jelajahi hubungan antara pengelolaan informasi dan kebutuhan
+                    organisasi. Baca informasi D3 Manajemen Informatika langsung
+                    dari sumber resmi.
+                  </p>
+                  <a href="https://ti.pnp.ac.id/manajemen-informatika/"
+                    >Lihat Manajemen Informatika
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </details>
+              <details class="program" data-degree="D4">
+                <summary>
+                  <span class="degree">D4</span>
+                  <h3>
+                    Teknologi Rekayasa<br class="desktop-break" />
+                    Perangkat Lunak
+                  </h3>
+                  <span class="program-area">Perangkat lunak</span
+                  ><svg class="plus" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14M12 5v14" />
+                  </svg>
+                </summary>
+                <div class="program-body">
+                  <p>
+                    Ingin mengenal rekayasa perangkat lunak lebih jauh? Temukan
+                    informasi D4 Teknologi Rekayasa Perangkat Lunak di halaman
+                    program studi.
+                  </p>
+                  <a
+                    href="https://ti.pnp.ac.id/teknologi-rekayasa-perangkat-lunak/"
+                    >Lihat Rekayasa Perangkat Lunak
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </details>
+              <details class="program" data-degree="D4">
+                <summary>
+                  <span class="degree">D4</span>
+                  <h3>Animasi</h3>
+                  <span class="program-area">Visual &amp; gerak</span
+                  ><svg class="plus" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14M12 5v14" />
+                  </svg>
+                </summary>
+                <div class="program-body">
+                  <p>
+                    Teknologi juga menjadi medium untuk bercerita. Kenali D4
+                    Animasi dan informasi programnya melalui situs resmi
+                    jurusan.
+                  </p>
+                  <a href="https://ti.pnp.ac.id/animasi/"
+                    >Lihat Animasi <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </details>
+            </div>
+            <div class="explorer-footer">
+              <span>Beragam bidang. Satu semangat untuk belajar.</span
+              ><span>Informasi lengkap di situs resmi TI PNP.</span>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section id="tentang" class="about wrap" aria-labelledby="about-title">
+        <div class="about-copy">
+          <h2 id="about-title">Teknologi bertemu<br />kemungkinan.</h2>
+          <p>
+            Jurusan Teknologi Informasi memperkenalkan bidang pengelolaan
+            informasi berbasis komputer untuk kebutuhan instansi, organisasi,
+            dan bisnis modern.
+          </p>
+          <p>
+            Halaman ini membantu kamu mengenali pilihan program studi. Untuk
+            kurikulum, persyaratan, dan informasi akademik terbaru, gunakan
+            situs resmi jurusan sebagai rujukan utama.
+          </p>
+          <a class="text-link" href="https://ti.pnp.ac.id/"
+            >Kenali jurusan di situs resmi <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div
+          class="program-map"
+          aria-label="Peta pilihan program dari proyek awal"
+        >
+          <h3>Empat pilihan untuk dijelajahi.</h3>
+          <ul>
+            <li><span>D3</span><a href="#program-studi">Teknik Komputer</a></li>
+            <li>
+              <span>D3</span><a href="#program-studi">Manajemen Informatika</a>
+            </li>
+            <li>
+              <span>D4</span
+              ><a href="#program-studi">Teknologi Rekayasa Perangkat Lunak</a>
+            </li>
+            <li><span>D4</span><a href="#program-studi">Animasi</a></li>
+          </ul>
+          <details class="legacy-artifact">
+            <summary>Lihat grafis proyek awal</summary>
+            <figure>
+              <img
+                src="assets/program-studi-640.webp"
+                srcset="
+                  assets/program-studi-640.webp  640w,
+                  assets/program-studi.webp     1280w
+                "
+                sizes="(max-width: 800px) calc(100vw - 40px), 480px"
+                alt="Grafis asli yang mencantumkan empat program studi pada latar papan sirkuit."
+                width="1280"
+                height="720"
+                loading="lazy"
+              />
+              <figcaption>
+                Arsip visual proyek awal; bukan dokumentasi kegiatan kampus.
+              </figcaption>
+            </figure>
+          </details>
+        </div>
+      </section>
+      <section
+        id="akreditasi"
+        class="accreditation"
+        aria-labelledby="accreditation-title"
+      >
+        <div class="wrap accreditation-layout">
+          <div>
+            <h2 id="accreditation-title">Akreditasi<br />program studi.</h2>
+            <p>
+              Status berikut berasal dari konten proyek awal dan
+              <strong>belum diverifikasi ulang</strong>. Status serta masa
+              berlaku terkini perlu diperiksa pada sumber resmi.
+            </p>
+            <a class="text-link" href="https://ti.pnp.ac.id/"
+              >Periksa informasi resmi <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div
+            class="table-scroll"
+            role="region"
+            aria-label="Tabel akreditasi program studi"
+            tabindex="0"
+          >
+            <table>
+              <caption>
+                Status yang tercantum pada proyek awal
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Program studi</th>
+                  <th scope="col">Jenjang</th>
+                  <th scope="col">Akreditasi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Teknik Komputer</th>
+                  <td>D3</td>
+                  <td>Baik Sekali</td>
+                </tr>
+                <tr>
+                  <th scope="row">Manajemen Informatika</th>
+                  <td>D3</td>
+                  <td>Unggul</td>
+                </tr>
+                <tr>
+                  <th scope="row">Teknologi Rekayasa Perangkat Lunak</th>
+                  <td>D4</td>
+                  <td>Baik Sekali</td>
+                </tr>
+                <tr>
+                  <th scope="row">Animasi</th>
+                  <td>D4</td>
+                  <td>Baik Sekali</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="panduan" class="guide wrap" aria-labelledby="guide-title">
+        <div>
+          <h2 id="guide-title">Pilih dengan pertanyaan<br />yang tepat.</h2>
+          <p>
+            Panduan eksplorasi editorial, bukan kurikulum resmi atau tes
+            penentuan jurusan. Gunakan pertanyaan ini saat membaca halaman
+            program dan berdiskusi dengan pihak kampus.
+          </p>
+        </div>
+        <ol class="decision-list">
+          <li>
+            <h3>Apa yang ingin kamu pelajari?</h3>
+            <p>
+              Catat topik yang menarik bagimu, lalu cocokkan dengan mata kuliah
+              pada kurikulum resmi. Jangan hanya memilih dari nama program.
+            </p>
+          </li>
+          <li>
+            <h3>Seperti apa proses belajarnya?</h3>
+            <p>
+              Tanyakan bentuk praktikum, tugas, dan proyek akhir. Cari contoh
+              karya yang benar-benar diterbitkan oleh program studi.
+            </p>
+          </li>
+          <li>
+            <h3>Apa yang perlu kamu pastikan?</h3>
+            <p>
+              Periksa persyaratan masuk, biaya, status akreditasi beserta masa
+              berlakunya, dan kontak resmi sebelum mengambil keputusan.
+            </p>
+          </li>
+        </ol>
+        <p id="source-status" class="source-status">
+          Transparansi sumber: detail akademik terbaru belum dapat diverifikasi
+          dari lingkungan pengembangan ini. Halaman resmi menampilkan verifikasi
+          keamanan saat diperiksa pada 6 November 2026. Tautan resmi tetap
+          tersedia; keterangan program di halaman ini bukan daftar mata kuliah.
+        </p>
+      </section>
+      <section class="media-section wrap" aria-labelledby="media-title">
+        <div>
+          <h2 id="media-title">Sisi lain dari<br />halaman ini.</h2>
+          <p>
+            Video visual dari proyek awal, kini opsional. Tidak diputar otomatis
+            dan baru dimuat ketika kamu memilih untuk menontonnya.
+          </p>
+          <p class="media-note">
+            Visual dekoratif tanpa informasi akademik. Audio dimatikan secara
+            default.
+          </p>
+        </div>
+        <div>
+          <video
+            controls
+            muted
+            playsinline
+            preload="none"
+            poster="assets/video-poster.webp"
+            aria-label="Video visual dekoratif dari proyek awal"
+          >
+            Tonton video visual dekoratif.
+            <source src="bgvideo.mp4" type="video/mp4" />
+            Browser tidak mendukung video.
+            <a href="bgvideo.mp4">Unduh video</a>.
+          </video>
+          <p class="media-note">
+            Jika video tidak dapat diputar,
+            <a href="bgvideo.mp4">unduh video asli</a>.
+          </p>
+        </div>
+      </section>
+      <section class="closing" aria-labelledby="closing-title">
+        <div class="wrap closing-inner">
+          <h2 id="closing-title">
+            Langkah berikutnya,<br />mulai dari rasa ingin tahu.
+          </h2>
+          <a class="button button-lime" href="https://ti.pnp.ac.id/"
+            >Kunjungi situs resmi TI PNP
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 18 18 6M6 6h12v12" /></svg
+          ></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div>
+        <strong>Teknologi Informasi</strong>
+        <p>Politeknik Negeri Padang</p>
+      </div>
+      <p>
+        Proyek kontribusi komunitas / mahasiswa.<br />Bukan situs resmi
+        institusi.
+      </p>
+      <a href="https://github.com/faxhym/web-tekinfo1b"
+        >Kode sumber <span aria-hidden="true">↗</span></a
+      ><a href="#">Kembali ke atas <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
 </html>
